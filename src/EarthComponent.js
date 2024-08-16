@@ -1,11 +1,27 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
+import useAnimations from "./utils/useAnimations";
 
 const EarthComponent = () => {
+  const [ref, isVisible] = useAnimations({ threshold: 0.5 });
   return (
-    <Container className="campaign-container" fluid>
+    <Container
+      className="earth-container"
+      fluid
+      ref={ref}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateY(0)" : "translateY(20px)",
+        transition:
+          "opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 1.5s cubic-bezier(0.4, 0, 0.2, 1)",
+      }}
+    >
       <Row className="mt-5 ms-5 me-5 mb-5">
         <Col md={6}>
-          <Image className="earth-img" src="./logos/earth.jpg" fluid />
+          <Image
+            className="earth-img"
+            src="https://i.gifer.com/PX5H.gif"
+            fluid
+          />
         </Col>
         <Col md={6}>
           <h1>

@@ -10,8 +10,10 @@ const FeaturesComponent = () => {
         fluid
         ref={ref}
         style={{
-          opacity: isVisible ? 1 : 0.5,
-          transition: "all 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
+          transform: isVisible ? "translateY(0)" : "translateY(20px)",
+          transition:
+            "opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 1.5s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
         <h1 className="ms-5 me-5">

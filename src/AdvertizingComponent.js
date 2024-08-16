@@ -5,12 +5,13 @@ const AdvertizingComponent = () => {
   const [ref, isVisible] = useAnimations({ threshold: 0.5 });
   return (
     <Container
-      className="campaign-container"
+      className="advertizing-container"
       fluid
       ref={ref}
       style={{
-        opacity: isVisible ? 1 : 0.5,
-        transition: "all 1s ease-in",
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "scale(1)" : "scale(0.9)",
+        transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
       }}
     >
       <Row className="mt-5 ms-5 me-5 mb-5">

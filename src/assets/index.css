@@ -33,15 +33,25 @@ body {
 }
 
 .avalanche-container {
+  position: relative;
   background-color: #e84142;
   color: #ffff;
   position: relative;
   min-height: fit-content;
 }
+
 .avalanche-img {
-  width: 40rem;
-  height: 30rem;
+  height: 32rem;
   inset: auto 5% 5% auto;
+  min-width: 50rem;
+}
+
+.earth-container {
+  position: relative;
+}
+
+.earth-img {
+  height: 100%;
 }
 
 a,
@@ -51,6 +61,5 @@ a,
 }
 
 .screens {
-  padding-left: 5%;
-  height: 40vh;
+  height: 100%;
 }
