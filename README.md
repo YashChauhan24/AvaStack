@@ -1,2 +1,1 @@
-# avastack
-AvaStack
+# AvaStack
