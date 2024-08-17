@@ -43,7 +43,7 @@ body {
 .avalanche-img {
   height: 32rem;
   inset: auto 5% 5% auto;
-  min-width: 50rem;
+  min-width: 38rem;
 }
 
 .earth-container {
@@ -60,6 +60,6 @@ a,
   color: #141414;
 }
 
-.screens {
+/* .screens {
   height: 100%;
-}
+} */
